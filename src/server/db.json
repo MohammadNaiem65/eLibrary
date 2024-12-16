@@ -1,0 +1,341 @@
+{
+    "books": [
+        {
+            "id": "675fbc6319c715b7521a9b99",
+            "title": "Mom, I Want to Hear Your Story: A Mother’s Guided Journal To Share Her Life & Her Love (Hear Your Story Books)",
+            "description": "Mom, I Want to Hear Your Story is the fun and delightful way for you to discover everything from your mother's childhood memories to the profound turning points in her life. Featuring specially selected questions in an easy-to-use layout, each intentional section gives your mom a place to share her life with you while creating a lasting legacy.",
+            "author": ["Jeffrey Mason", "Hear Your Story"],
+            "price": 100.96,
+            "picture": "https://m.media-amazon.com/images/I/41EhSBYl2JL._SY445_SX342_.jpg",
+            "rating": 4.9,
+            "published": "2019-07-18T18:00:00.000Z",
+            "tags": ["best seller"]
+        },
+        {
+            "id": "675fcdbb841223b8628e7cde",
+            "title": "Dog Man: Big Jim Begins: A Graphic Novel (Dog Man #13): From the Creator of Captain Underpants",
+            "description": "In DOG MAN: BIG JIM BEGINS, discover the origin of our beloved characters from the Dog Man series as they join forces to stop the Space Cuties from destroying the city. Will the past predict the future for Dog Man and his friends? Will goodness and bravery prevail? Can anything happen if you truly believe?",
+            "author": ["Dav Pilkey"],
+            "price": 279.23,
+            "picture": "https://m.media-amazon.com/images/I/71K+9YJ7VbL._SY466_.jpg",
+            "rating": 4.11,
+            "published": "2024-12-02T18:00:00.000Z",
+            "tags": ["best seller", "kid"]
+        },
+        {
+            "id": "675fcdbb777d39a9ffafed7d",
+            "title": "The Ultimate History Buff Challenge: Over 600 Quiz Questions for Curious History Lovers",
+            "description": "The Ultimate History Buff Challenge will push your knowledge to the limit and leave you craving more. With challenges that will test your wits, stump your friends, and keep you guessing until the very end, this book is guaranteed to keep you entertained for hours on end.",
+            "author": ["Bill O'Neill"],
+            "price": 267.78,
+            "picture": "https://m.media-amazon.com/images/I/81fjEcQkTuL._SY466_.jpg",
+            "rating": 3.01,
+            "published": "2024-04-08T18:00:00.000Z",
+            "tags": ["best seller", "history"]
+        },
+        {
+            "id": "675fcdbbab9e04ea5c3af3cd",
+            "title": "Little Corner: Coloring Book for Adults and Teens, Super Cute Designs of Cozy, Hygge Spaces for Relaxation (Cozy Spaces Coloring)",
+            "description": "If you enjoy decorating your own cozy room, this Little Corner Coloring Book is for you. This book features 40 illustrations of places with super cute decor, such as a fully equipped kitchen, a dreamy bedroom, a wooden fireplace, and many more!",
+            "author": ["Coco WyoCoco Wyo"],
+            "price": 161.51,
+            "picture": "https://m.media-amazon.com/images/I/71QManc1wDL._SY466_.jpg",
+            "rating": 4.24,
+            "published": "2024-05-28T18:00:00.000Z",
+            "tags": ["best seller", "kid", "coloring"]
+        },
+        {
+            "id": "675fcdbbeac74d04cbb96a75",
+            "title": "World of Eric Carle, Around the Farm 30-Button Animal Sound Book - Great for First Words - PI Kids",
+            "description": "Put on your overalls and have a stroll Around The Farm in this amazing sound book! Your little one can press 30 different sound buttons while they read to bring the amazing art stylings of Eric Carle to life!",
+            "author": ["Eric CarleEric Carle", "PI Kids"],
+            "price": 158.22,
+            "picture": "https://m.media-amazon.com/images/I/91WyMdm13iL._SY466_.jpg",
+            "rating": 3.26,
+            "published": "2013-01-31T18:00:00.000Z",
+            "tags": ["best seller", "kid", "coloring"]
+        },
+        {
+            "id": "675fcdbb0873cc58edebf0b1",
+            "title": "The Nvidia Way: Jensen Huang and the Making of a Tech Giant",
+            "description": "A deeply reported business history of the chip-designer Nvidia—from its founding in 1993 to its recent emergence as one of the most valuable corporations in the world—explaining how the company’s culture, overseen by cofounder and CEO Jensen Huang, has powered its incredible success.",
+            "author": ["Tae Kim"],
+            "price": 216.21,
+            "picture": "https://m.media-amazon.com/images/I/91rSlfLvEOL._SY466_.jpg",
+            "rating": 3.17,
+            "published": "2024-12-09T18:00:00.000Z",
+            "tags": ["tech", "business"]
+        },
+        {
+            "id": "675fcdbb28ea0d8ddb958ccb",
+            "title": "AI Engineering: Building Applications with Foundation Models",
+            "description": "Recent breakthroughs in AI have not only increased demand for AI products, they've also lowered the barriers to entry for those who want to build AI products. The model-as-a-service approach has transformed AI from an esoteric discipline into a powerful development tool that anyone can use. Everyone, including those with minimal or no prior AI experience, can now leverage AI models to build applications. In this book, author Chip Huyen discusses AI engineering: the process of building applications with readily available foundation models.",
+            "author": ["Chip HuyenChip Huyen"],
+            "price": 259.64,
+            "picture": "https://m.media-amazon.com/images/I/81rZFw+9buL._SY466_.jpg",
+            "rating": 4.69,
+            "published": "2024-12-03T18:00:00.000Z",
+            "tags": ["tech", "ai"]
+        },
+        {
+            "id": "675fcdbbd31ea171589c5046",
+            "title": "Are You Smart Enough to Work at Google?",
+            "description": "If you want to work at Google, or any of America's best companies, you need to have an answer to this and other puzzling questions. Are You Smart Enough to Work at Google? guides readers through the surprising solutions to dozens of the most challenging interview questions. The book covers the importance of creative thinking, ways to get a leg up on the competition, what your Facebook page says about you, and much more. Are You Smart Enough to Work at Google? is a must-read for anyone who wants to succeed in today's job market.",
+            "author": ["William Poundstone"],
+            "price": 412.76,
+            "picture": "https://m.media-amazon.com/images/I/71wIvHAkwPL._SY466_.jpg",
+            "rating": 1.09,
+            "published": "2012-01-03T18:00:00.000Z",
+            "tags": ["tech", "job"]
+        },
+        {
+            "id": "675fcdbb9c5fbb776184159b",
+            "title": "Code the Classics Volume II",
+            "description": "Take inspiration from the some of the greatest video games of the 1980s and learn how to write your own modern classics",
+            "author": ["David Crookes"],
+            "price": 499.69,
+            "picture": "https://m.media-amazon.com/images/I/81DVNp61kyL._SY466_.jpg",
+            "rating": 3.68,
+            "published": "2024-08-27T18:00:00.000Z",
+            "tags": ["tech", "code", "game"]
+        },
+        {
+            "id": "675fd33f819f6e34381a749c",
+            "title": "HOW TO USE QUICKEN : Mastering Personal Finance",
+            "description": "The book covers different versions of Quicken, so no matter which one you have, you’ll find guidance tailored to your needs. Discover how to prepare for tax season, create custom reports, and manage business finances if you're a freelancer or entrepreneur.",
+            "author": ["MATHEW OWENS"],
+            "price": 441.27,
+            "picture": "https://m.media-amazon.com/images/I/617I2-oL-vL._SY466_.jpg",
+            "rating": 3.12,
+            "published": "2024-10-24T18:00:00.000Z",
+            "tags": ["self help", "business"]
+        },
+        {
+            "id": "675fd33fa345c26309617532",
+            "title": "Lunar Interlude: A Dystopian Sci-Fi Adventure: Cyber Dreams, Book 5",
+            "description": "Juliet Bianchi has evolved from a lowly scrap cutter to a fully-loaded, combat-ready dark side operator. Known as 'Lucky', she takes high-risk jobs for high-tech upgrades (you know, like weaponry, super reflexes, mind reading, etc.) that make her nearly invulnerable. Nearly.",
+            "author": ["Podium Audio", "Suzy Jackson", "Plum Parrot"],
+            "price": 320.09,
+            "picture": "https://m.media-amazon.com/images/I/912So186+YL._SX342_.jpg",
+            "rating": 2.15,
+            "published": "2024-12-02T18:00:00.000Z",
+            "tags": ["sci fi", "kid"]
+        },
+        {
+            "id": "675fd33f69007c484b90439c",
+            "title": "The Official Minecraft Coloring Book: Create, Explore, Relax!",
+            "description": "Creepers got you down? Pickaxe constantly breaking? Illagers raiding your hard-won homestead? Sometimes even the hardiest adventurer just needs a break. Based on Minecraft, the best-selling video game of all time, this deluxe adult coloring book lets you slow down, destress, and color your way through over sixty epic pages of original art inspired by the expansive, wondrous, and never-ending Minecraft world.",
+            "author": ["Insight Editions"],
+            "price": 147.49,
+            "picture": "https://m.media-amazon.com/images/I/8106I23c0lL._SY466_.jpg",
+            "rating": 2.74,
+            "published": "2022-12-05T18:00:00.000Z",
+            "tags": ["kid", "coloring"]
+        },
+        {
+            "id": "675fd33f087dd563202dc9e6",
+            "title": "AI Snake Oil: What Artificial Intelligence Can Do, What It Can’t, and How to Tell the Difference",
+            "description": "Confused about AI and worried about what it means for your future and the future of the world? You’re not alone. AI is everywhere—and few things are surrounded by so much hype, misinformation, and misunderstanding. In AI Snake Oil, computer scientists Arvind Narayanan and Sayash Kapoor cut through the confusion to give you an essential understanding of how AI works, why it often doesn’t, where it might be useful or harmful, and when you should suspect that companies are using AI hype to sell AI snake oil—products that don’t work, and probably never will.",
+            "author": [
+                "Arvind Narayanan",
+                "Sayash Kapoor",
+                "Landon Woodson",
+                "Princeton University Press"
+            ],
+            "price": 287.03,
+            "picture": "https://m.media-amazon.com/images/I/81lSKGsfIGL._SX342_.jpg",
+            "rating": 3.04,
+            "published": "2024-09-23T18:00:00.000Z",
+            "tags": ["ai", "tech"]
+        },
+        {
+            "id": "675fd33f4f265364ad7ccaab",
+            "title": "The Muscle Ladder: Get Jacked Using Science",
+            "description": "The Muscle Ladder: Get Jacked Using Science is the best all-in-one science-based guide for building a strong and muscular physique. Jeff Nippard, professional natural bodybuilder and coach, has developed a clear blueprint for anyone at any level to achieve their fitness goals. Having architected tens of thousands of programs for athletes and gym-goers, Jeff possesses a mastery of the scientific mechanisms that will help you unlock your hypertrophic potential.",
+            "author": ["Jeff Nippard"],
+            "price": 94.44,
+            "picture": "https://m.media-amazon.com/images/I/81aKo1O7glL._SY466_.jpg",
+            "rating": 2.59,
+            "published": "2024-12-30T18:00:00.000Z",
+            "tags": ["health", "fitness"]
+        },
+        {
+            "id": "675fd33f969fcb1f037143fb",
+            "title": "The Healthy Meal Prep Cookbook: Easy and Wholesome Meals to Cook, Prep, Grab, and Go",
+            "description": "Meal prep is a great way to save time and money with wholesome grab-n-go options for breakfast and lunch, and quick dinners you and your family will love.",
+            "author": ["Toby AmidorToby Amidor"],
+            "price": 122.15,
+            "picture": "https://m.media-amazon.com/images/I/915ZIL5mGZL._SY466_.jpg",
+            "rating": 2.02,
+            "published": "2017-08-21T18:00:00.000Z",
+            "tags": ["health", "diet"]
+        },
+        {
+            "id": "675fd33f596534eadc568b23",
+            "title": "Stop Overthinking: 23 Techniques to Relieve Stress",
+            "description": "Overthinking is the biggest cause of unhappiness. Don't get stuck in a never-ending thought loop. Stay present and keep your mind off things that don't matter, and never will.",
+            "author": ["Nick Trenton"],
+            "price": 186.57,
+            "picture": "https://m.media-amazon.com/images/I/71k9zlFpoDL._SY466_.jpg",
+            "rating": 3.24,
+            "published": "2021-02-28T18:00:00.000Z",
+            "tags": ["best seller", "self help"]
+        },
+        {
+            "id": "675fd33fe1caa90067b0778d",
+            "title": "Ikigai: The Japanese Secret to a Long and Happy Life",
+            "description": "INTERNATIONAL BESTSELLER • 2 MILLION+ COPIES SOLD WORLDWIDE",
+            "author": ["Héctor García", "Francesc Miralles"],
+            "price": 66.64,
+            "picture": "https://m.media-amazon.com/images/I/71xH0ALI4-L._SY466_.jpg",
+            "rating": 3.31,
+            "published": "2017-08-28T18:00:00.000Z",
+            "tags": ["self help", "best seller"]
+        },
+        {
+            "id": "675fd33f1fdbbc8f2d3ceee8",
+            "title": "Guts: A Graphic Novel",
+            "description": "A true story from Raina Telgemeier, the #1 New York Times bestselling, multiple Eisner Award-winning author of Smile, Sisters, Drama, and Ghosts!",
+            "author": ["Raina Telgemeier"],
+            "price": 489.78,
+            "picture": "https://m.media-amazon.com/images/I/71MYq0S0wOL._SY466_.jpg",
+            "rating": 4.33,
+            "published": "2019-09-16T18:00:00.000Z",
+            "tags": ["self help", "best seller", "diet"]
+        },
+        {
+            "id": "675fd33fe72c90bcd8ea8256",
+            "title": "Barbara O’Neill Natural Herbal Remedies Complete Collection: The Ultimate Guide to Knowing ALL of Dr. Barbara O’Neill’s Studies and the Non-Toxic Lifestyle.",
+            "description": "Unlock the Secrets to Natural Health with the Ultimate Herbal Remedies and Holistic Health Collection Inspired by Dr. Barbara O'Neill! 🌿 Are you frustrated with conventional treatments that only seem to address the symptoms rather than the root causes of your health issues? Do you crave a more natural, sustainable path to well-being?",
+            "author": ["Roberta Lane"],
+            "price": 74.08,
+            "picture": "https://m.media-amazon.com/images/I/71kQ-gsD0ML._SY466_.jpg",
+            "rating": 5,
+            "published": "2024-06-17T18:00:00.000Z",
+            "tags": ["health", "best seller", "self help"]
+        },
+        {
+            "id": "675fd33fd387763521d3932a",
+            "title": "My First Coloring Book (Ms. Rachel)",
+            "description": "It’s time for colorful fun with big, bold pictures to color along with Ms. Rachel— YouTube star, household name, and America’s favorite teacher!",
+            "author": ["Ms. Rachel"],
+            "price": 413.69,
+            "picture": "https://m.media-amazon.com/images/I/81v+cEm96PL._SY466_.jpg",
+            "rating": 2.48,
+            "published": "2022-01-06T18:00:00.000Z",
+            "tags": ["kid", "coloring"]
+        },
+        {
+            "id": "675fd33fc2ce7f0efcd08f01",
+            "title": "Winter is... An Early Reader Book for Toddlers and Kids: Fun and Educational Rhyming Picture Book. A Winter Read Aloud Book for the Whole Family (Rhyme in Time) ",
+            "description": "Winter is a magical season filled with wonder, as snowflakes dance through the air and create a sparkling landscape. It’s a time for families to bundle up, sip hot cocoa, and enjoy cozy, magical moments together. As you read through each page of this enchanting book, you are transported into the world of winter, experiencing its charm and heartwarming moments.",
+            "author": ["Alvin Adhi", "Barbara Pinke"],
+            "price": 472.31,
+            "picture": "https://m.media-amazon.com/images/I/81Y8Tuun9nL._SY466_.jpg",
+            "rating": 4.4,
+            "published": "2024-11-04T18:00:00.000Z",
+            "tags": ["kid"]
+        },
+        {
+            "id": "675fd33f77c6c727bfa87e2b",
+            "title": "25 Days",
+            "description": "25 days, 25 chapters. This December, the countdown to Christmas will chill you to the bone. Hoping to bring his family closer together, Adam Gray arranges a vacation in a remote cabin on a snowy mountain. Things take a dark turn, however, when someone starts leaving gifts in the Christmas stocking mounted on the barn door.",
+            "author": ["Per JacobsenPer Jacobsen"],
+            "price": 131.6,
+            "picture": "https://m.media-amazon.com/images/I/715Ay+NF5UL._SY466_.jpg",
+            "rating": 4.26,
+            "published": "2024-10-31T18:00:00.000Z",
+            "tags": ["mystery", "thriller", "best seller"]
+        },
+        {
+            "id": "675fd33fe5e7ef4a310562b6",
+            "title": "Redaction (Rachel Hatch Book 12)",
+            "description": "Secrets Don't Stay Buried Forever… When a quiet New Hampshire town erupts in chaos, Rachel Hatch is sent in as backup for a senator under fire—literally and figuratively. What should have been a routine security op quickly spirals into a nightmare. A mysterious figure lurks in the shadows, watching, waiting, and armed with a sniper's patience. Every move Hatch makes is under a lens, and every step forward feels like one deeper into a trap.",
+            "author": ["L.T. Ryan", "Brian Shea"],
+            "price": 74.77,
+            "picture": "https://m.media-amazon.com/images/I/812AQdUcMGL._SY466_.jpg",
+            "rating": 3.72,
+            "published": "2024-12-11T18:00:00.000Z",
+            "tags": ["thriller", "crime", "best seller"]
+        },
+        {
+            "id": "675fd33f84c41e5b73f532f9",
+            "title": "The Witness",
+            "description": "From a New York Times bestselling author, a public defender must protect herself and her young son after stumbling upon a chilling secret. After narrowly escaping a deadly car crash, Kendall Deaton and her son find refuge in a small South Carolina town. But their relief is short-lived when Keaton makes a terrifying discovery. The town of Prosper isn't so innocent after all.",
+            "author": ["Sandra BrownSandra Brown"],
+            "price": 376.34,
+            "picture": "https://m.media-amazon.com/images/I/91iRq4LUVkL._SY466_.jpg",
+            "rating": 4.56,
+            "published": "2013-06-24T18:00:00.000Z",
+            "tags": ["crime", "thriller", "adventure"]
+        },
+        {
+            "id": "675fd33fc7473d819a11f1b6",
+            "title": "Animal Farm: 75th Anniversary Edition",
+            "description": "George Orwell's timeless and timely allegorical novel—a scathing satire on a downtrodden society’s blind march towards totalitarianism.",
+            "author": ["George Orwell", "C. S. Fritz"],
+            "price": 463.83,
+            "picture": "https://m.media-amazon.com/images/I/71je3-DsQEL._SY466_.jpg",
+            "rating": 2.48,
+            "published": "2004-04-05T18:00:00.000Z",
+            "tags": ["business", "history"]
+        },
+        {
+            "id": "675fd33fd119930dd979547d",
+            "title": "Tasting History: Explore the Past through 4,000 Years of Recipes",
+            "description": "Begin your very own food journey through the centuries and around the world with the first cookbook from the beloved YouTube channel Tasting History with Max Miller.",
+            "author": ["Max Miller", "Ann Volkwein"],
+            "price": 422.76,
+            "picture": "https://m.media-amazon.com/images/I/81u5A4IvUfL._SY466_.jpg",
+            "rating": 4.4,
+            "published": "2016-05-11T06:51:42 -06:00",
+            "tags": ["history", "diet"]
+        },
+        {
+            "id": "675fd33f3b42129c24b28cab",
+            "title": "Green Witchcraft: A Practical Guide to Discovering the Magic of Plants, Herbs, Crystals, and Beyond",
+            "description": "Green witchcraft is a school of magic that relies on living in harmony with the earth and its many natural wonders―and this book is your guide. Open yourself up to green magic with clear instructions on building your own practice, and performing spells and rituals like cleansing with moonlight, using honeysuckle to attract wealth, and harnessing quartz to direct positive energy.",
+            "author": ["Paige Vanderbeck"],
+            "price": 481.67,
+            "picture": "https://m.media-amazon.com/images/I/91IGEZyJovL._SY466_.jpg",
+            "rating": 4.21,
+            "published": "2020-02-24T18:00:00.000Z",
+            "tags": ["best seller", "health"]
+        },
+        {
+            "id": "675fd33f23ec5cbd461fabd6",
+            "title": "Plantopedia: The Definitive Guide to Houseplants",
+            "description": "Houseplants have the power to transform any room. With their lush foliage and structural beauty, they help create indoor oases that bring a sense of tranquility to our busy lives. Fostering a connection to plants has many positive implications for us and our environment by strengthening our relationship with the natural world.",
+            "author": ["Sophia Kaplan", "Lauren CamilleriLauren Camilleri"],
+            "price": 396.72,
+            "picture": "https://m.media-amazon.com/images/I/81Eqn-XYz0L._SY466_.jpg",
+            "rating": 4.2,
+            "published": "2020-10-26T18:00:00.000Z",
+            "tags": ["health", "best seller"]
+        }
+    ],
+    "tags": {
+        "categories": [
+            "self help",
+            "best seller",
+            "kid",
+            "health",
+            "diet",
+            "business",
+            "tech",
+            "game",
+            "mystery",
+            "crime",
+            "adventure",
+            "history",
+            "thriller",
+            "job",
+            "ai",
+            "code",
+            "coloring",
+            "fitness",
+            "sci fi"
+        ]
+    },
+    "users": []
+}
