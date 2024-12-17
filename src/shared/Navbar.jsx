@@ -1,17 +1,20 @@
 import { BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { SearchBar } from './SearchBar';
 
-const navItems = ['home', 'best sellers', 'all products', 'cart', 'login'];
+const navItems = ['home', 'all products', 'cart', 'login'];
 
 export default function Navbar() {
     return (
-        <nav className='w-full px-8 py-6 flex items-center justify-between z-[100] bg-slate-700/30 backdrop-blur-sm fixed'>
-            <div className='flex items-center gap-2'>
+        <nav className='w-full px-8 py-4 flex items-center justify-between z-[100] backdrop-blur-sm fixed bg-gradient-to-r from-purple-900/70 to-blue-900/70'>
+            <Link to='/' className='flex items-center gap-2'>
                 <BookOpen className='h-8 w-8 text-white' />
                 <span className='text-2xl font-bold text-white'>BookVerse</span>
-            </div>
+            </Link>
 
-            <div className='flex gap-x-8'>
+            <div className='flex items-center gap-x-8'>
+                <SearchBar className='w-96' />
+
                 {navItems.map((item, index) => (
                     <Link
                         key={index}
@@ -23,7 +26,7 @@ export default function Navbar() {
                                   )}`
                                 : item.replace(' ', '-')
                         }
-                        className='capitalize text-white/90 hover:text-white transition-colors duration-200'
+                        className='capitalize text-white/90 hover:text-white transition-colors duration-200 text-nowrap'
                     >
                         {item}
                     </Link>

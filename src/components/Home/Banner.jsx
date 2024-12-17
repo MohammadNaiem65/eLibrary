@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { SearchBar } from './SearchBar';
+import { SearchBar } from '../../shared/SearchBar';
 
 export default function Banner() {
     return (
@@ -32,7 +32,7 @@ export default function Banner() {
                         to timeless classics, all at your fingertips.
                     </p>
                     <div className='flex justify-center'>
-                        <SearchBar />
+                        <SearchBar className='w-full' />
 
                         <Link
                             to='/all-products'
