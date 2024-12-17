@@ -1,11 +1,11 @@
 import { BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const navItems = ['home', 'best sellers', 'all products', 'login'];
+const navItems = ['home', 'best sellers', 'all products', 'cart', 'login'];
 
 export default function Navbar() {
     return (
-        <nav className='w-full px-8 py-6 flex items-center justify-between z-[100] backdrop-blur-sm'>
+        <nav className='w-full px-8 py-6 flex items-center justify-between z-[100] bg-slate-700/30 backdrop-blur-sm fixed'>
             <div className='flex items-center gap-2'>
                 <BookOpen className='h-8 w-8 text-white' />
                 <span className='text-2xl font-bold text-white'>BookVerse</span>
