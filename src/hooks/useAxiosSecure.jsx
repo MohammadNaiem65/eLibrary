@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosSecure = axios.create({
-    baseURL: 'https://openlibrary.org',
+    baseURL: 'http://localhost:3000',
 });
 
 export default function useAxiosSecure() {
