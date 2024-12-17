@@ -1,9 +1,9 @@
-import Navbar from '../../shared/Navbar';
+import { Link } from 'react-router-dom';
 import { SearchBar } from './SearchBar';
 
 export default function Banner() {
     return (
-        <div className='h-screen w-full relative'>
+        <section className='h-screen w-full relative'>
             {/* Background Image */}
             <div
                 className='absolute inset-0 bg-cover bg-center z-0'
@@ -17,10 +17,10 @@ export default function Banner() {
 
             {/* Content */}
             <div className='relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-                <Navbar />
+                {/* <Navbar /> */}
 
                 {/* Hero Section */}
-                <div className='mt-10 py-20 text-center'>
+                <div className='py-52 text-center'>
                     <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6'>
                         Discover Your Next
                         <span className='block text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400'>
@@ -33,9 +33,16 @@ export default function Banner() {
                     </p>
                     <div className='flex justify-center'>
                         <SearchBar />
+
+                        <Link
+                            to='/all-products'
+                            className='bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-lg font-semibold ml-4'
+                        >
+                            All Products
+                        </Link>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
