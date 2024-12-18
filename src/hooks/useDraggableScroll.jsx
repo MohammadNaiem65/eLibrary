@@ -1,6 +1,6 @@
 import { useRef, useState, useCallback } from 'react';
 
-export function useDraggableScroll() {
+export default function useDraggableScroll() {
     const [isDragging, setIsDragging] = useState(false);
     const [startPosition, setStartPosition] = useState({ x: 0, y: 0 });
     const [scrollLeft, setScrollLeft] = useState(0);
