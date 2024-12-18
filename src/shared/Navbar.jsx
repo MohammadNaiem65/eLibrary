@@ -2,7 +2,7 @@ import { BookOpen } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SearchBar } from './SearchBar';
 
-const navItems = ['home', 'all products', 'cart', 'login'];
+const navItems = ['home', 'books', 'cart', 'login'];
 
 export default function Navbar() {
     return (
@@ -18,14 +18,7 @@ export default function Navbar() {
                 {navItems.map((item, index) => (
                     <Link
                         key={index}
-                        to={
-                            index === 1
-                                ? `/all-products?category=${item.replace(
-                                      ' ',
-                                      '-'
-                                  )}`
-                                : item.replace(' ', '-')
-                        }
+                        to={item}
                         className='capitalize text-white/90 hover:text-white transition-colors duration-200 text-nowrap'
                     >
                         {item}

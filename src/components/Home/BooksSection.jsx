@@ -32,7 +32,7 @@ export default function BooksSection({ tag, queryResult }) {
                 <div className='flex justify-between items-center mb-8'>
                     <h2 className='text-3xl font-bold capitalize'>{tag}:</h2>
                     <Link
-                        to={`/all-products?category=${tag.replace(' ', '-')}`}
+                        to={`/books?category=${tag}`}
                         className='text-gray-600 hover:text-gray-900'
                     >
                         See all
