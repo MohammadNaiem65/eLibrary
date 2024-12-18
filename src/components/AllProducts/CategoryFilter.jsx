@@ -1,33 +1,20 @@
-import { useDraggableScroll } from '../../hooks/useDraggableScroll';
+import { useQuery } from '@tanstack/react-query';
+import useAxiosSecure from '../../hooks/useAxiosSecure';
+import useDraggableScroll from '../../hooks/useDraggableScroll';
 import CategoryButton from './CategoryButton';
 
-const categories = [
-    'self help',
-    'best seller',
-    'kid',
-    'health',
-    'diet',
-    'business',
-    'tech',
-    'game',
-    'mystery',
-    'crime',
-    'adventure',
-    'history',
-    'thriller',
-    'job',
-    'ai',
-    'code',
-    'coloring',
-    'fitness',
-    'sci fi',
-];
-
-export default function CategoryFilter({
-    selectedCategory,
-    setSelectCategory,
-}) {
+export default function CategoryFilter() {
     const { containerRef, handlers, isDragging } = useDraggableScroll();
+
+    const axiosSecure = useAxiosSecure();
+
+    const { data: categories } = useQuery({
+        queryKey: ['categories'],
+        queryFn: async () => {
+            const res = await axiosSecure.get('/tags');
+            return res.data?.categories;
+        },
+    });
 
     return (
         <div className='relative w-full select-none'>
@@ -39,13 +26,8 @@ export default function CategoryFilter({
                 {...handlers}
             >
                 <div className='flex gap-4 min-w-max'>
-                    {categories.map((category) => (
-                        <CategoryButton
-                            key={category}
-                            category={category}
-                            isSelected={selectedCategory === category}
-                            onClick={() => setSelectCategory(category)}
-                        />
+                    {categories?.map((category) => (
+                        <CategoryButton key={category} category={category} />
                     ))}
                 </div>
             </div>
