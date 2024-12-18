@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Loader from './shared/Loader';
 import Footer from './shared/Footer';
 import Navbar from './shared/Navbar';
@@ -14,8 +14,9 @@ function App() {
                     <Outlet />
                 </Suspense>
             </main>
-            
+
             <Footer />
+            <ScrollRestoration />
         </>
     );
 }
