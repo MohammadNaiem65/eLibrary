@@ -9,7 +9,8 @@ export default function useAuthCheck() {
     const { setAuthData } = useContext(AuthContext);
 
     useEffect(() => {
-        const { accessToken, user } = JSON.parse(localStorage.getItem('auth'));
+        const { accessToken, user } =
+            JSON.parse(localStorage.getItem('auth')) || {};
 
         if (user && accessToken) {
             setUser(user);
