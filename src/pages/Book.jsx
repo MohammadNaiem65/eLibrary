@@ -1,7 +1,9 @@
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { Calendar, Tag } from 'lucide-react';
 import useAxiosSecure from '../hooks/useAxiosSecure';
+import CartContext from '../contexts/CartContext';
 import StarRating from '../shared/StarRating';
 
 function formatDate(dateString) {
@@ -13,6 +15,7 @@ function formatDate(dateString) {
 }
 
 export default function Book() {
+    const { cart, setCart } = useContext(CartContext);
     const { id } = useParams();
     const axiosSecure = useAxiosSecure();
 
@@ -23,6 +26,22 @@ export default function Book() {
             return res.data;
         },
     });
+
+    const handleAddToCart = () => {
+        const existingBook = cart?.find((bk) => bk.id === id);
+        let updatedCart;
+
+        if (existingBook) {
+            updatedCart = cart.map((bk) =>
+                bk.id === id ? { ...bk, quantity: bk.quantity + 1 } : bk
+            );
+        } else {
+            updatedCart = [...cart, { ...book, quantity: 1 }];
+        }
+
+        setCart(updatedCart);
+        localStorage.setItem('cart', JSON.stringify(updatedCart));
+    };
 
     return (
         book?.id && (
@@ -92,7 +111,10 @@ export default function Book() {
                                 <span className='text-3xl font-bold text-gray-900'>
                                     ${book.price.toFixed(2)}
                                 </span>
-                                <button className='px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-300'>
+                                <button
+                                    onClick={handleAddToCart}
+                                    className='px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition-colors duration-300'
+                                >
                                     Add to Cart
                                 </button>
                             </div>
