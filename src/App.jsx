@@ -4,8 +4,15 @@ import { ToastContainer } from 'react-toastify';
 import Loader from './shared/Loader';
 import Footer from './shared/Footer';
 import Navbar from './shared/Navbar';
+import useAuthCheck from './hooks/useAuthCheck';
 
 function App() {
+    const authChecked = useAuthCheck();
+
+    if (!authChecked) {
+        return;
+    }
+
     return (
         <>
             <Navbar />
