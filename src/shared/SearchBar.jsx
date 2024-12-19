@@ -1,15 +1,27 @@
-import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Search } from 'lucide-react';
 
 export function SearchBar({ className }) {
-    const [query, setQuery] = useState('');
+    const [searchParams, setSearchParams] = useSearchParams();
 
     return (
         <div className='relative max-w-md w-full'>
             <input
                 type='text'
-                value={query}
-                onChange={(e) => setQuery(e.target.value)}
+                value={searchParams.get('query') || ''}
+                onChange={(e) =>
+                    setSearchParams(
+                        (prev) => {
+                            if (e.target.value) {
+                                prev.set('query', e.target.value);
+                            } else {
+                                prev.delete('query');
+                            }
+                            return prev;
+                        },
+                        { replace: true }
+                    )
+                }
                 placeholder='Search for books...'
                 className={`px-4 py-3 pl-10 bg-white/10 backdrop-blur-md rounded-lg 
                    border border-white/20 text-white placeholder-white/70
