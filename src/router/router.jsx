@@ -4,6 +4,7 @@ import App from '../App';
 
 const Home = lazy(() => import('../pages/Home'));
 const Books = lazy(() => import('../pages/Books'));
+const Book = lazy(() => import('../pages/Book'));
 const Cart = lazy(() => import('../pages/Cart'));
 const Login = lazy(() => import('../pages/Login'));
 const Register = lazy(() => import('../pages/Register'));
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: '/books',
                 element: <Books />,
+            },
+            {
+                path: '/books/:id',
+                element: <Book />,
             },
             {
                 path: '/cart',
