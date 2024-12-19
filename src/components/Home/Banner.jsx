@@ -1,7 +1,11 @@
-import { Link } from 'react-router-dom';
-import { SearchBar } from '../../shared/SearchBar';
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Search } from 'lucide-react';
 
 export default function Banner() {
+    const [query, setQuery] = useState('');
+    const navigate = useNavigate();
+
     return (
         <section className='h-screen w-full relative'>
             {/* Background Image */}
@@ -32,13 +36,28 @@ export default function Banner() {
                         to timeless classics, all at your fingertips.
                     </p>
                     <div className='flex justify-center'>
-                        <SearchBar className='w-full' />
+                        <div className='relative max-w-md w-full'>
+                            <input
+                                type='text'
+                                value={query}
+                                onChange={(e) => setQuery(e.target.value)}
+                                onKeyUp={(e) =>
+                                    e.key === 'Enter' &&
+                                    navigate(`/books?query=${query}`)
+                                }
+                                placeholder='Search for books...'
+                                className={`w-full px-4 py-3 pl-10 bg-white/10 backdrop-blur-md rounded-lg 
+                   border border-white/20 text-white placeholder-white/70
+                   focus:outline-none focus:ring-2 focus:ring-white/30 `}
+                            />
+                            <Search className='absolute left-3 top-[.9rem] h-5 w-5 text-white/70' />
+                        </div>
 
                         <Link
-                            to='/all-products'
+                            to='/books'
                             className='bg-gradient-to-r from-purple-400 to-pink-400 text-white px-6 py-3 rounded-lg font-semibold ml-4'
                         >
-                            All Products
+                            All Books
                         </Link>
                     </div>
                 </div>
