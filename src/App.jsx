@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Loader from './shared/Loader';
 import Footer from './shared/Footer';
 import Navbar from './shared/Navbar';
@@ -16,6 +17,7 @@ function App() {
             </main>
 
             <Footer />
+            <ToastContainer />
             <ScrollRestoration />
         </>
     );
