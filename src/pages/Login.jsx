@@ -1,17 +1,68 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useMutation } from '@tanstack/react-query';
+import { Bounce, toast } from 'react-toastify';
 import { LogIn, Mail, Lock } from 'lucide-react';
+import useAxiosSecure from '../hooks/useAxiosSecure';
 import AuthCard from '../components/Auth/AuthCard';
 import AuthLink from '../components/Auth/AuthLink';
 import Input from '../shared/Input';
+import Loader from '../shared/Loader';
+import Error from '../shared/Error';
 
 const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [err, setErr] = useState('');
+
+    const axiosSecure = useAxiosSecure();
+    const navigate = useNavigate();
+    const {
+        mutate,
+        data: response,
+        isPending,
+        isSuccess,
+        isError,
+        error,
+    } = useMutation({
+        mutationFn: () => axiosSecure.post('/login', { email, password }),
+    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle login logic here
+
+        mutate();
     };
+
+    useEffect(() => {
+        if (isSuccess) {
+            const { data } = response;
+
+            localStorage.setItem('auth', JSON.stringify(data));
+
+            navigate('/books');
+
+            toast('Successfully Logged In', {
+                position: 'bottom-right',
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: 'light',
+                transition: Bounce,
+            });
+        }
+    }, [isSuccess, response, navigate]);
+
+    useEffect(() => {
+        if (isError) {
+            setErr(error?.response.data);
+        }
+    }, [isError, error]);
+
+    // console.log(data, isSuccess);
 
     return (
         <AuthCard
@@ -43,24 +94,6 @@ const Login = () => {
                     required
                 />
 
-                <div className='flex items-center justify-between'>
-                    <div className='flex items-center'>
-                        <input
-                            type='checkbox'
-                            className='h-4 w-4 text-purple-600 focus:ring-purple-500 border-gray-300 rounded'
-                        />
-                        <label className='ml-2 block text-sm text-gray-700'>
-                            Remember me
-                        </label>
-                    </div>
-                    <a
-                        href='#'
-                        className='text-sm font-medium text-purple-600 hover:text-purple-500'
-                    >
-                        Forgot password?
-                    </a>
-                </div>
-
                 <button
                     type='submit'
                     className='w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transform transition-transform duration-200 hover:scale-[1.02]'
@@ -69,12 +102,18 @@ const Login = () => {
                 </button>
             </form>
 
+            {err && (
+                <Error className='w-fit mx-auto mt-3 rounded' error={err} />
+            )}
+
             <AuthLink
                 text="Don't have an account?"
                 linkText='Sign up'
                 href='/register'
                 color='text-purple-600'
             />
+
+            {isPending && <Loader />}
         </AuthCard>
     );
 };
