@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { Bounce, toast } from 'react-toastify';
 import { LogIn, Mail, Lock } from 'lucide-react';
 import useAxiosSecure from '../hooks/useAxiosSecure';
+import AuthContext from '../contexts/AuthContext';
+import UserContext from '../contexts/UserContext';
 import AuthCard from '../components/Auth/AuthCard';
 import AuthLink from '../components/Auth/AuthLink';
 import Input from '../shared/Input';
@@ -14,6 +16,9 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [err, setErr] = useState('');
+
+    const { setAuthData } = useContext(AuthContext);
+    const { setUser } = useContext(UserContext);
 
     const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
@@ -36,9 +41,12 @@ const Login = () => {
 
     useEffect(() => {
         if (isSuccess) {
-            const { data } = response;
+            const { accessToken, user } = response.data;
 
-            localStorage.setItem('auth', JSON.stringify(data));
+            localStorage.setItem('auth', JSON.stringify({ accessToken, user }));
+
+            setAuthData({ accessToken });
+            setUser(user);
 
             navigate('/books');
 
@@ -54,7 +62,7 @@ const Login = () => {
                 transition: Bounce,
             });
         }
-    }, [isSuccess, response, navigate]);
+    }, [isSuccess, response, navigate, setAuthData, setUser]);
 
     useEffect(() => {
         if (isError) {
