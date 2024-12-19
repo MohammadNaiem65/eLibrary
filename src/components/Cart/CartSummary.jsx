@@ -1,5 +1,37 @@
+import { useState, useContext } from 'react';
+import { toast, Bounce } from 'react-toastify';
+import CartContext from '../../contexts/CartContext';
+import Loader from '../../shared/Loader';
+
 export default function CartSummary({ subtotal, shipping, tax }) {
+    const [showLoader, setShowLoader] = useState(false);
+    const { setCart } = useContext(CartContext);
     const total = subtotal + shipping + tax;
+
+    const handleConfirmOrder = () => {
+        setShowLoader(true);
+
+        setTimeout(() => {
+            setShowLoader(false);
+            localStorage.removeItem('cart');
+            setCart([]);
+
+            toast(
+                '😊 Thanks for ordering. Order will be delivered within a light-year.',
+                {
+                    position: 'bottom-right',
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: false,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: 'light',
+                    transition: Bounce,
+                }
+            );
+        }, 2200);
+    };
 
     return (
         <div className='bg-gray-50 p-6 rounded-lg'>
@@ -26,9 +58,15 @@ export default function CartSummary({ subtotal, shipping, tax }) {
                     </div>
                 </div>
             </div>
-            <button className='w-full bg-blue-600 text-white py-3 rounded-lg mt-6 hover:bg-blue-700 transition-colors'>
-                Proceed to Checkout
+            <button
+                onClick={handleConfirmOrder}
+                disabled={!subtotal}
+                className='w-full bg-blue-600 text-white py-3 rounded-lg mt-6 hover:bg-blue-700 transition-colors disabled:bg-blue-900'
+            >
+                Confirm Order
             </button>
+
+            {showLoader && <Loader />}
         </div>
     );
 }
