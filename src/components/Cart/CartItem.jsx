@@ -2,22 +2,22 @@ import { Minus, Plus, Trash2 } from 'lucide-react';
 
 export default function CartItem({
     id,
-    name,
+    title,
     price,
-    image,
+    picture,
     quantity,
     onUpdateQuantity,
     onRemove,
 }) {
     return (
-        <div className='flex items-center gap-4 py-4'>
+        <div className='flex items-start gap-4 py-4'>
             <img
-                src={image}
-                alt={name}
+                src={picture}
+                alt={title}
                 className='w-24 h-24 object-cover rounded-lg'
             />
             <div className='flex-1'>
-                <h3 className='text-lg font-semibold text-gray-900'>{name}</h3>
+                <h3 className='text-lg font-semibold text-gray-900'>{title}</h3>
                 <p className='text-gray-600'>${price.toFixed(2)}</p>
                 <div className='flex items-center gap-2 mt-2'>
                     <button
